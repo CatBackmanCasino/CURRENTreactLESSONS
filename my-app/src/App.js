@@ -1,15 +1,12 @@
-import logo from './logo.svg';
+
 import './App.css';
-import FunctionalGreetingWithProps from './components/FunctionalGreetingWithProps';
-import StatefulGreetingWithPrevState from './components/StatefulGreetingWithPrevState';
-import EventsFunctional from './components/EventsFunctional';
-import EventsClass from './components/EventsClass';
+import { MethodsAsPropsParent } from './components/MethodsAsPropsParent';
+
 
 function App() {
   return (
     <div className="App">
-      <EventsFunctional />
-      <EventsClass />
+      <MethodsAsPropsParent />
     </div>
   );
 }
