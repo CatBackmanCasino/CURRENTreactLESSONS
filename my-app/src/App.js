@@ -1,12 +1,12 @@
 
 import './App.css';
-import { MethodsAsPropsParent } from './components/MethodsAsPropsParent';
+import RenderinigLists from './components/RenderinigLists';
 
 
 function App() {
   return (
     <div className="App">
-      <MethodsAsPropsParent />
+      <RenderinigLists />
     </div>
   );
 }
