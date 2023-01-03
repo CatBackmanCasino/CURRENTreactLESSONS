@@ -10,35 +10,35 @@ function RenderinigLists() {
 
     const books = [
         {
-            title: "title 1",
-            author: "author 1",
-            pages: "pages 1"
+            title: "To Kill A Mockingbird",
+            author: "Harper, Lee",
+            pages: "281"
         },
         {
-            title: "title 2",
-            author: "author 2",
-            pages: "pages 2"
+            title: "The Great Gatsby",
+            author: "F. Scott Fitzgerald",
+            pages: "218"
         },
         {
-            title: "title 3",
-            author: "author 3",
-            pages: "pages 3"
+            title: "The Catcher In The Rye",
+            author: "J. D. Salinger",
+            pages: "234"
         }
     ]
 
     return (
         <div>
             {booklist.map(book => {
-                return <h2>{book}</h2>
+                return <h2 key={book}>{book}</h2>
             })}
             <hr />
             {
-                books.map(title => {
+                books.map(book => {
                     return (
-                        <div>
-                            <h5>{title.title}</h5>
-                            <p>{title.author}</p>
-                            <p>{title.pages}</p>
+                        <div key={book.title}>
+                            <h5>{book.title}</h5>
+                            <p>{book.author}</p>
+                            <p>{book.pages}</p>
                         </div>
                     )
                 })
@@ -46,7 +46,9 @@ function RenderinigLists() {
             <hr />
             {
                 books.map(book => {
-                    return <Book book={book} />
+                    return <Book 
+                    key={book.title}
+                    book={book} />
                 })
             }
 
