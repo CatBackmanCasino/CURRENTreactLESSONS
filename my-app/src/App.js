@@ -1,12 +1,13 @@
 
 import './App.css';
-import RenderinigLists from './components/RenderinigLists';
+import LifeCyclesCDU from './components/LifeCyclesCDU';
+
 
 
 function App() {
   return (
     <div className="App">
-      <RenderinigLists />
+      <LifeCyclesCDU />
     </div>
   );
 }
