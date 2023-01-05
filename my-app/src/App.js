@@ -1,13 +1,14 @@
 
 import './App.css';
-import LifeCyclesCDU from './components/LifeCyclesCDU';
+import ControlledForm from './components/ControlledForm';
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <LifeCyclesCDU />
+      <ControlledForm />
     </div>
   );
 }
